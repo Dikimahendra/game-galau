@@ -1,0 +1,109 @@
+body{
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+}
+.score-cont .p-2{
+	margin: 0;
+}
+.canvas{
+	margin-left: -2px;
+}
+.canvas img{
+	height: 80px;
+	margin: 0;
+	
+}
+
+.canvas .btn{
+	padding: 0;
+	margin: 15px;
+}
+.canvas .btn:nth-child(1){
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	animation: animasic1 3s infinite;
+}
+.canvas .btn:nth-child(2){
+	position: absolute;
+	top: 200px;
+	animation: animasic2 4s infinite;
+}
+.canvas .btn:nth-child(3){
+	position: absolute;
+	top: 150px;
+	right: 0px;
+	animation: animasic3 2s infinite;
+}
+@keyframes animasic1{
+	0%{top: 120px;}
+	50%{top: 1000px;}
+	100%{top: 120px;}
+}
+@keyframes animasic2{
+	0%{top: 200px;}
+	50%{top: 1000px;}
+	100%{top: 200px;}
+}
+@keyframes animasic3{
+	0%{top: 150px;}
+	50%{top: 1000px;}
+	100%{top: 150px;}
+}
+.footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100vw;
+}
+.footer .card{
+	border-radius: 20px 20px 0px 0px;
+}
+.footer .card .btn-primary{
+	background: none;
+	border: 0px;
+}
+.btn:focus, .btn:active{
+	outline: none !important;
+   	box-shadow: none;
+}
+.footer .card .btn{
+	transition: 1s;
+}
+
+.footer .card .btn:focus{
+	margin-left: -100px;
+}
+.win{
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	padding: 8%;
+	color: white;
+	text-align: center;
+}
+.win .card{
+	margin-top: 50%;
+	padding: 20px;
+}
+.win a{
+	margin-top: 20px;
+}
+.penghalang{
+	display: flex;
+	justify-content: space-between;
+	height: 200px;
+	width: 100vw;
+	position: absolute;
+	bottom: 0px;
+	background: white;
+}
+.penghalang div{
+	margin: 0 10px;
+	height: 10px;
+	width: 200px;
+	border-top: 2px solid #3b3b40;
+	
+}
